@@ -30,7 +30,7 @@ const DEFAULT_CONFIG: RaceConfig = {
 export default function RaceSettings() {
   const [config, setConfig] = useState<RaceConfig>(DEFAULT_CONFIG);
 
-  const handleChange = (key: keyof RaceConfig, value: any) => {
+  const handleChange = (key: keyof RaceConfig, value: RaceConfig[keyof RaceConfig]) => {
     setConfig(prev => ({
       ...prev,
       [key]: value,
@@ -125,7 +125,7 @@ export default function RaceSettings() {
           <select
             id="orientation"
             value={config.orientation}
-            onChange={(e) => handleChange('orientation', e.target.value)}
+            onChange={(e) => handleChange('orientation', e.target.value as 'horizontal' | 'vertical')}
             className="bg-background border-border/50 w-full p-2"
           >
             <option value="horizontal">Horizontal (Left to Right)</option>
