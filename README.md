@@ -1,37 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chrono Game - Timing Practice Race Simulator 🚴‍♂️⏱️
 
-## Getting Started
+Timing Practice Race Simulator is a web application designed to help timing professionals improve their skills. The app simulates a configurable "rain" of numbers (representing cyclists) racing across a track. Users can adjust settings such as the number of cyclists, speeds, cyclist size, number range, and even the race orientation (horizontal or vertical). During the race, users record times and compare them with the actual finish times, enabling performance analysis and improvement.
 
-First, run the development server:
+## Features 🎭
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Configurable Race Settings:**  
+  Set the number of cyclists, speed range, cyclist size, number range, and orientation (horizontal or vertical).
+- **Race Simulation:**  
+  Cyclists spawn outside the track with random delays and speeds, moving across the track with a configurable layout.
+- **Real-Time Results:**  
+  Compare user-recorded times with actual finish times to assess timing accuracy.
+- **Responsive Design:**  
+  Built with Next.js, Tailwind CSS, and shadcn UI for a modern, responsive interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack 🛠️
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend:** Next.js, React, Tailwind CSS, shadcn UI
+- **Backend:** Node.js (Next.js API Routes)
+- **Database:** MongoDB (if integrated)
+- **Deployment:** Vercel
+- **Version Control:** Git & GitHub
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Getting Started 🚀
 
-## Learn More
+1. **Clone the repository:**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/notfabianml/chrono-game.git
+   cd chrono-game
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Run the development server:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Chrono-Game
+   ```bash
+   npm run dev
+
+4. **Open your browser at:** http://localhost:3000
